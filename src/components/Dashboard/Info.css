@@ -1,0 +1,25 @@
+.info-card{
+    padding: 0 5px;
+}
+.info-primary{
+    background-color:#0046c0;
+}
+.info-dark{
+    background-color:#3A4256;
+}
+.info-container{
+    height: 100px;
+    padding:30px;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.info-icon{
+    font-size: 3em;
+}
+
+.font-family{
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Roboto', sans-serif;
+   
+}

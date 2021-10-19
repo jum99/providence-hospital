@@ -1,0 +1,17 @@
+.doctor-item {
+    text-align: center;
+    box-shadow: 0 0 20px 0 #ddd;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .doctor-title {
+    color: #20bdd1;
+  }
+  
+  .doctor-item:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 25px 10px rgb(0 0 0 / 10%);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  

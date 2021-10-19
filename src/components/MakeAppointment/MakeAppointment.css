@@ -1,0 +1,16 @@
+.main-button{
+    display: inline-block;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 24px;
+    background-color:#0843aa;
+    color: white;
+    transition: all .4s ease;
+    border: 2px solid white;
+}
+.main-button:hover{
+    background-color:#f9004fea;
+    color: white;
+}

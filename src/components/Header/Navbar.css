@@ -1,0 +1,25 @@
+.nav-link{
+    margin-right: 10px !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+
+}
+.log{
+    background-color: #0046c0 !important;
+    border-radius: 10px;
+    color: white;
+}
+.navbar-brand{
+    color: #0046c0 !important;
+    font-weight: 700;
+}
+.bg-color{
+    background-color: #20bdd1;
+}
+
+.navbar-toggler {
+    margin: 0 auto;
+}
+.carousel-indicators{
+    display: none;
+}

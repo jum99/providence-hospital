@@ -1,0 +1,94 @@
+.service-img {
+    width: 150px;
+    height: 150px;
+  }
+  .service-card {
+    transition: 0.5s !important;
+  }
+  
+  .bottom span {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .bottom span:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px !important;
+    border-top: 3px solid #20bdd1;
+    border-left: 3px solid #20bdd1;
+  }
+  .bottom span:nth-child(2) {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 10px !important;
+    border-top: 3px solid #20bdd1;
+    border-right: 3px solid #20bdd1;
+  }
+  .bottom span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px !important;
+    border-bottom: 3px solid #20bdd1;
+    border-right: 3px solid #20bdd1;
+  }
+  .bottom span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 10px !important;
+    border-bottom: 3px solid #20bdd1;
+    border-left: 3px solid #20bdd1;
+  }
+  
+  .service-card .bottom {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.5rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0 8px 20px 0 #f5fcfe;
+    box-shadow: 0 8px 20px 0 #f5fcfe;
+  }
+  .icon {
+    display: inline-block;
+    margin: auto;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #e0f8fc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  a {
+    text-decoration: none!important;
+  }
+  a:hover {
+    color: #20bdd1;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 10px 25px 10px rgb(0 0 0 / 10%);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  
+  .service-card:hover .bottom span {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .service-card:hover .bottom .icon {
+    background-color: #20bdd1;
+    color: white;
+  }
+  
