@@ -1,6 +1,9 @@
 import React from 'react';
-import CalenderPart from '../CalenderPart/CalenderPart';
-import DoctorsInfo from '../Doctors/DoctorsInfo';
+
+import CalenderPart from '../CalendarPart/CalendarPart';
+
+import DoctorsInfo from '../DoctorsInfo/DoctorsInfo';
+
 import ServiceTime from '../ServiceTime/ServiceTime';
 
 const DashboardBody = () => {

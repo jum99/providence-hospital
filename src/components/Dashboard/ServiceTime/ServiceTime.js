@@ -1,5 +1,5 @@
 import React from 'react';
-import './ServiceTime.css'
+import './ServiceTime.css';
 
 const ServiceTime = () => {
     return (
@@ -7,13 +7,12 @@ const ServiceTime = () => {
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Working Hour</h5>
-                    <p class="card-text">Sun-Thu 12:05 pm to 8:00 pm<br />
-                        Saturday 12:30 am to 9:00 pm<br />
+                    <p class="card-text">Sun-Thu 12:05 PM to 8:00 PM<br />
+                        Saturday 12:30 AM to 9:00 PM<br />
                         Friday Closed<br /><br />
-                        Phone: +8801737019528<br />
-                        Email: debakor10@gmail.com <br /><br />
-                        Adress: Golapganj Chomoni,Rahaman
-                        CNG station opposite site </p>
+                        Phone: +880178888888 <br />
+                        Email:  providence@gmail.com <br /><br />
+                        Adress:  Jindabazar, Sylhet<br /> CNG Stand Opposite Site </p>
                     <a href="#" class="btn btn-primary">Learn more</a>
                 </div>
             </div>

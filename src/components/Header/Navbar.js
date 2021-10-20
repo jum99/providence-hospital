@@ -54,6 +54,11 @@ const Navbar = () => {
                         </li>
                         <li class="nav-item">
                             <Link to="/aboutDetails" class="nav-link" href="#">
+                                <i class="fas fa-info-circle"></i>About Us
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/serviceDetails" class="nav-link" href="#">
                                 <i class="fas fa-info-circle"></i>Our Services
                             </Link>
                         </li>
@@ -62,34 +67,20 @@ const Navbar = () => {
                                 <i class="fas fa-users"></i>Doctors
                             </Link>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                <i class="fas fa-briefcase-medical"></i>Services
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/appointment">
-                                    Ultrasonography
-                                </a>
-                                <a class="dropdown-item" href="/appointment">
-                                    Chamber
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/appointment">
-                                    Book Video Call
-                                </a>
-                            </div>
-                        </li>
+
                         <li class="nav-item">
                             <Link to="/blogDetails" class="nav-link" href="#">
                                 <i class="fas fa-blog"></i> Blogs
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/dashboard" class="nav-link" href="#">
+                                Dashboard
+                            </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to="/appointment" class="nav-link" href="#">
+                                Appointment
                             </Link>
                         </li>
                     </ul>

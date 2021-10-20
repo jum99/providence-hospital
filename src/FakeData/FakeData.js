@@ -1,6 +1,6 @@
 const FakeData = [
     {
-        img: "https://kidshealth.org/EN/images/illustrations/frontalAbdomen-400x400-rd1-enIL.gif",
+        img: "https://images.medicinenet.com/images/image_collection/webmd_anatomy/abdomen-anatomy.jpg",
         name: "Whole Abdomen",
         description: "The abdomen contains all the digestive organs, including the stomach, small and large intestines, pancreas, liver, and gallbladder",
     },

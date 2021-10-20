@@ -1,5 +1,4 @@
 import React from 'react';
-import Headbar from '../../components/Header/Headbar';
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Blog from '../../components/Blog/Blog';
@@ -7,10 +6,9 @@ import Blog from '../../components/Blog/Blog';
 const BlogDetails = () => {
     return (
         <>
-            <Headbar />
+
             <Navbar />
             <Blog />
-            <Footer />
             <div className="appointment-banner">
                 <div className="appointment-feature">
                     <div className="title">
@@ -19,7 +17,6 @@ const BlogDetails = () => {
                 </div>
 
             </div>
-            <Blog />
             <Footer />
         </>
     );

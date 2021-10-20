@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import ultrasono from '../../images/ultrasono.jpg';
+import hospital from '../../images/hospital.jpg';
 import img1 from '../../images/shape1.png';
 import img2 from '../../images/shape2.png';
 
@@ -15,7 +15,7 @@ const About = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="about-img">
-                            <img src={ultrasono} alt="" />
+                            <img src={hospital} alt="" />
                         </div>
                     </div>
                     <div className="col-lg-6">

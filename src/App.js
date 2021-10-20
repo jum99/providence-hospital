@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Appointment from './Pages/Booking/Appointment';
@@ -16,7 +14,7 @@ import AboutDetails from './Pages/AboutDetails/AboutDetails';
 import DoctorsDetails from './Pages/DoctorsDetails/DoctorsDetails';
 import BlogDetails from './Pages/BlogDetails/BlogDetails';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
-import NotFound from './Pages/NotFound'
+import NotFound from './Pages/NotFound';
 
 export const UserContext = createContext();
 
