@@ -34,7 +34,7 @@ const Banner = () => {
                     <div class="carousel-item">
                         <img src={bg3} class="d-block bg-w" alt="..." />
                         <div class="carousel-caption d-md-block">
-                            <p className="banner-semi-title">Providence Hospital</p>
+                            <p className="banner-semi-title text-bolder">Providence Hospital</p>
                             <h3 className="banner-title">Dr. Sukumar Hasan</h3>
                             <p className="text-dark mt-3">MBBS, DMU and Children Specialist</p>
                         </div>

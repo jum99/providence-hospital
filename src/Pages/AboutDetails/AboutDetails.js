@@ -8,12 +8,12 @@ const AboutDetails = () => {
         <>
 
             <Navbar />
-            <About />
             <div className="appointment-banner">
                 <div className="appointment-feature">
                     <div className="title">
-                        <h1 className="">About</h1>
+                        <h1 className="text-center">About</h1>
                     </div>
+                    <About />
                 </div>
 
             </div>

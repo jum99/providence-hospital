@@ -8,12 +8,12 @@ const BlogDetails = () => {
         <>
 
             <Navbar />
-            <Blog />
             <div className="appointment-banner">
                 <div className="appointment-feature">
                     <div className="title">
                         <h1 className="">Blog</h1>
                     </div>
+                    <Blog />
                 </div>
 
             </div>
