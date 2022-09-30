@@ -10,27 +10,30 @@ const doctors = [
     {
         img: "https://disin-react.hibootstrap.com/images/doctors/doctor1.jpg",
         name: "Dr. Minu Begum",
-        Position: "Children Specialist"
+        Position: "Neurologist"
     },
 
 ]
 
 const Doctors = () => {
-    const [doctor, setDoctor] = useState([])
+
+    const [doctor, setDoctor] = useState([]);
+
     useEffect(() => {
         setDoctor(doctors)
-    }, [])
+    }, []);
+
     return (
         <>
             <div className="container my-5">
-                <p className="banner-semi-title text-center">Doctor</p>
-                <h3 className="banner-title text-center mb-5">Medicine Specialist</h3>
+                <h1 className="title mt-5 text-center">Doctors</h1>
+                <p className="semi-title text-center mb-5">Medicine Specialist</p>
                 <div className="row justify-content-center">
                     {
                         doctor.map(dr => <div className="col-lg-5 col-sm-6 col-11 mb-3">
                             <div className="doctor-item">
                                 <div>
-                                    <img src={dr.img} alt="" className="w-100 rounded" />
+                                    <img style={{ height: "300px" }} src={dr.img} alt="" className="w-100 rounded" />
                                 </div>
                                 <div className="doctor-bottom py-3">
                                     <h3 className='doctor-title'>{dr.name}</h3>

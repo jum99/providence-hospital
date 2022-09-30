@@ -7,6 +7,7 @@ const CalenderPart = () => {
     return (
         <>
             <Calendar
+                className="p-3"
                 onChange={onChange}
                 value={value}
             />

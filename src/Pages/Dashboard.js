@@ -1,17 +1,13 @@
 import React from 'react';
 import DashboardBody from '../components/Dashboard/DashboardBody/DashboardBody';
 import DashboardInfo from '../components/Dashboard/DashboardInfo';
-import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Header/Navbar';
+import './Dashboard.css';
 
 const Dashboard = () => {
     return (
         <>
-
-            <Navbar />
             <section>
-                <h1 className='text-center my-4'>Dashboard</h1>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center mt-5">
                     <div className="col-md-10 col-sm-12 col-12">
                         <DashboardInfo />
                         <DashboardBody />
@@ -19,7 +15,6 @@ const Dashboard = () => {
 
                 </div>
             </section>
-            <Footer />
 
         </>
     );

@@ -37,32 +37,26 @@ const DoctorsInfo = () => {
     const classes = useStyles();
     return (
         <>
-            <Card className={classes.root}>
-                <CardActionArea>
-                    <CardMedia
-                        className={classes.media}
-                        image={img}
-                        title="Contemplative Reptile"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="h3">
-                            <Avatar className={classes.dr} alt="Remy Sharp" src={drr} />
-                            Dr Titu Acharjee
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            MBBS,DMU & CHILD PEDIATRIC
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Share
-                    </Button>
-                    <Button size="small" color="primary">
-                        Learn More
-                    </Button>
-                </CardActions>
-            </Card>
+            <div className='pb-1'>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                            className={classes.media}
+                            image={img}
+                            title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h3">
+                                <Avatar className={classes.dr} alt="Remy Sharp" src={drr} />
+                                Dr Titu Acharjee
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                MBBS,DMU & CHILD PEDIATRIC
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </div>
         </>
     );
 };

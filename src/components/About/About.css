@@ -1,99 +1,101 @@
 .about {
-    background-image: unset;
-    background-color: #fff;
-    z-index: 1;
-    position: relative;
+  background-image: unset;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.about-img {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #20bdd1;
+  border-radius: 45%;
+  z-index: -1;
+  -webkit-animation: border-transform-default-two 6s linear infinite alternate forwards;
+  animation: border-transform-default-two 6s linear infinite alternate forwards;
+}
+
+.about-img img {
+  width: 96%;
+  display: block;
+  margin: auto;
+  border-radius: 45%;
+  z-index: 1;
+  -webkit-animation: border-transform-default 6s linear infinite alternate forwards;
+  animation: border-transform-default 6s linear infinite alternate forwards;
+}
+
+.about-bg img {
+  position: absolute;
+  z-index: -1;
+}
+
+.about-bg img:nth-child(1) {
+  top: 0;
+  right: 0;
+}
+
+.about-bg img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes border-transform-default {
+  0% {
+    border-radius: 70% 50% 70% 60%;
   }
-  
-  .about-img {
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
+
+  25% {
+    border-radius: 60% 70% 50% 70%;
   }
-  .about-img::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #20bdd1;
-    border-radius: 45%;
-    z-index: -1;
-    -webkit-animation: border-transform-default-two 6s linear infinite alternate
-      forwards;
-    animation: border-transform-default-two 6s linear infinite alternate forwards;
+
+  50% {
+    border-radius: 50% 60% 70% 50%;
   }
-  
-  .about-img img {
-    width: 96%;
-    display: block;
-    margin: auto;
-    border-radius: 45%;
-    z-index: 1;
-    -webkit-animation: border-transform-default 6s linear infinite alternate
-      forwards;
-    animation: border-transform-default 6s linear infinite alternate forwards;
+
+  75% {
+    border-radius: 60% 70% 50% 70%;
   }
-  .about-item {
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 20px;
+
+  100% {
+    border-radius: 70% 50% 70% 60%;
   }
-  
-  .about-bg img {
-    position: absolute;
-    z-index: -1;
+}
+
+@keyframes border-transform-default-two {
+  0% {
+    border-radius: 60% 70% 50% 70%;
   }
-  
-  .about-bg img:nth-child(1) {
-    top: 0;
-    right: 0;
+
+  25% {
+    border-radius: 70% 50% 70% 60%;
   }
-  .about-bg img:nth-child(2) {
-    left: 0;
-    bottom: 0;
+
+  50% {
+    border-radius: 50% 70% 60% 50%;
   }
-  
-  @keyframes border-transform-default {
-    0% {
-      border-radius: 70% 50% 70% 60%;
-    }
-    25% {
-      border-radius: 60% 70% 50% 70%;
-    }
-    50% {
-      border-radius: 50% 60% 70% 50%;
-    }
-    75% {
-      border-radius: 60% 70% 50% 70%;
-    }
-    100% {
-      border-radius: 70% 50% 70% 60%;
-    }
+
+  75% {
+    border-radius: 70% 50% 70% 60%;
   }
-  
-  @keyframes border-transform-default-two {
-    0% {
-      border-radius: 60% 70% 50% 70%;
-    }
-    25% {
-      border-radius: 70% 50% 70% 60%;
-    }
-    50% {
-      border-radius: 50% 70% 60% 50%;
-    }
-    75% {
-      border-radius: 70% 50% 70% 60%;
-    }
-    100% {
-      border-radius: 60% 70% 50% 70%;
-    }
+
+  100% {
+    border-radius: 60% 70% 50% 70%;
   }
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .about {
-      margin-top: 20px;
-    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    margin-top: 20px;
   }
-  
+}

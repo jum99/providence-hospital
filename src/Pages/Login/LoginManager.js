@@ -1,4 +1,3 @@
-
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import firebaseConfig from './firebase.config';
@@ -37,6 +36,7 @@ export const handleGoogleSignIn = () => {
         .signInWithPopup(googleProvider)
         .then((result) => setUserInfo(result))
         .catch((error) => handleError(error));
+
 };
 
 

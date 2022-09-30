@@ -8,7 +8,7 @@ function NotFound() {
 
             <Navbar />
 
-            <h1 className='display-4 text-danger text-center py-5'>404 <br />  Page Not Found </h1>
+            <h1 className='display-4 text-danger my-5 text-center py-5'>404 <br />  Page Not Found </h1>
 
             <Footer />
         </div>

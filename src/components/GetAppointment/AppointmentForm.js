@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router';
 import { UserContext } from '../../App';
-
 import './AppointmentForm.css';
 
 const AppointmentForm = () => {
@@ -35,9 +34,9 @@ const AppointmentForm = () => {
             <div className="container appointment">
                 <div className="row">
                     <div className="col-md-6">
-                        <div className="service-form">
-                            <h1 className="appointment-title">Book Your Appointment</h1>
-                            <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
+                        <div className="appointment-form">
+                            <h2 className="appointment-title pt-4 pb-5">Book Your Appointment</h2>
+                            <form className="px-5 pb-1 mx-3" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="form-group">
                                     <input type="text" value={sessionStorage.getItem('displayName')} {...register("name", { required: true })} placeholder="Your Name" className="form-control" />
                                     {errors.name && <span className="text-danger">This field is required</span>}
@@ -92,15 +91,15 @@ const AppointmentForm = () => {
                                 </div>
 
                                 <div className="form-group ">
-                                    <button type="submit" className="btn btn-danger d-block mx-auto px-5 mt-5">Submit</button>
+                                    <button type="submit" className="btn regular-button d-block px-4 mx-auto mt-4">Submit</button>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div className="colmd-6">
+                    <div className="col-md-6">
                         <div className="appointment-item-two-right">
                             <div className="appointment-item-content">
-                                <h2 className="working">Working Hour</h2>
+                                <h2 className="mb-4 pt-3 text-center">Working Hour</h2>
                                 <ul>
                                     <li>
                                         <p>Saturday <span className="ml-5">9.00 am - 8.00 pm</span> </p>

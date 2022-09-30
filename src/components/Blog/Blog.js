@@ -1,8 +1,8 @@
-
 import React, { useEffect, useState } from 'react';
 import './Blog.css';
 
 const article = [
+
     {
         img: "https://hygger.io/wp-content/uploads/2019/12/535bca2223e6debf446ff3d7876e1ccc.jpg",
         name: "Family Health Care Project",
@@ -23,14 +23,17 @@ const article = [
 ]
 
 const Blog = () => {
-    const [blog, setBlog] = useState([])
+
+    const [blog, setBlog] = useState([]);
+
     useEffect(() => {
         setBlog(article)
-    }, [])
+    }, []);
+
     return (
         <>
             <div className="container doctor">
-                <h1 className="about-item mb-5 text-center">Recent News And Blogs</h1>
+                <h1 className="title mt-5 mb-5 text-center">Recent News And Blogs</h1>
                 <div className="row justify-content-center">
                     {
                         blog.map(article => <div className="col-lg-4 col-sm-6">

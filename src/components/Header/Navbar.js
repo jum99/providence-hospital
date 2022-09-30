@@ -53,23 +53,23 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li class="nav-item">
-                            <Link to="/aboutDetails" class="nav-link" href="#">
-                                <i class="fas fa-info-circle"></i>About Us
+                            <Link to="/about" class="nav-link" href="#">
+                                <i class="fas fa-info-circle"></i> About Us
                             </Link>
                         </li>
                         <li class="nav-item">
-                            <Link to="/serviceDetails" class="nav-link" href="#">
-                                <i class="fas fa-info-circle"></i>Our Services
+                            <Link to="/services" class="nav-link" href="#">
+                                <i class="fas fa-info-circle"></i> Our Services
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link to="/doctorsDetails" class="nav-link" href="#">
-                                <i class="fas fa-users"></i>Doctors
+                                <i class="fas fa-users"></i> Doctors
                             </Link>
                         </li>
 
                         <li class="nav-item">
-                            <Link to="/blogDetails" class="nav-link" href="#">
+                            <Link to="/blogs" class="nav-link" href="#">
                                 <i class="fas fa-blog"></i> Blogs
                             </Link>
                         </li>
@@ -85,29 +85,29 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <ul className="navbar-nav ml-auto mx-5">
-
+                    <ul className="navbar-nav mx-5">
                         {
                             JSON.parse(sessionStorage.getItem('login'))?.email ||
                                 JSON.parse(sessionStorage.getItem('login'))?.name ?
                                 <>
-                                    <li class="nav-item">
-                                        <p class="nav-link mb-0">
-                                            {JSON.parse(sessionStorage.getItem('login'))?.name || JSON.parse(sessionStorage.getItem('login'))?.email?.split("@")[0]}
-                                        </p>
+                                    <li class="nav-item nav-link">
+                                        {JSON.parse(sessionStorage.getItem('login'))?.name || JSON.parse(sessionStorage.getItem('login'))?.email?.split("@")[0]}
                                     </li>
 
                                     <li class="nav-item">
-                                        <Link to='/' onClick={() => logOut()} class="nav-link btn btn-sm btn-danger">
-                                            Log Out
+                                        <Link to='/' onClick={() => logOut()} class="nav-link">
+
+                                            <button className="regular-button py-1 px-3">Log out</button>
+
                                         </Link>
                                     </li>
 
                                 </>
                                 :
                                 <li class="nav-item">
-                                    <Link to="/login" class="nav-link btn btn-success">
-                                        Login
+                                    <Link to="/login" class="nav-link">
+                                        <button className="regular-button py-1 px-3">Log in</button>
+
                                     </Link>
                                 </li>
                         }

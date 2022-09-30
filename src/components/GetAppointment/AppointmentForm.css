@@ -1,41 +1,54 @@
-.appointment{
-    margin-top: 80px;
-    margin-bottom: 120px;
+.appointment {
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-.appointment-title{
+
+.appointment-form {
+    background-image: url(../../images/appointment.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.appointment-title {
     text-align: center;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
 }
-.working{
-    color: #0843aa;
-}
+
 .appointment-item-two-right .appointment-item-content ul {
     margin: 0;
     padding: 0;
 }
+
 .appointment-item-content {
-    background-color: #f6f6f6;
-    padding: 25px 60px 50px;
+    background-color: white;
+    /* padding: 25px 60px 50px; */
     margin: 0 40px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
+
 .appointment-item-content ul li {
     list-style-type: none;
     position: relative;
-    color: #344c5d;
+    color: black;
     font-weight: 500;
     font-size: 14px;
     border-bottom: 1px solid #eee;
     padding: 10px 0;
+    text-align: center;
 }
+
 .appointment-item-two-right {
-    background-image: url(../../images/work.jpg);
+    background-image: url(../../images/schedule.jpg);
     background-size: cover;
     background-position: 80%;
     background-repeat: no-repeat;
     height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-left: 80px;
+    border-radius: 5px;
 }

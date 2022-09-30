@@ -1,8 +1,8 @@
 import React from 'react';
 import './Banner.css';
-import bg1 from '../../images/bg-1.jpg';
-import bg2 from '../../images/bg-2.jpeg';
-import bg3 from '../../images/bg-3.jpg';
+import banner1 from '../../images/banner1.png';
+import banner2 from '../../images/banner2.jpg';
+import banner3 from '../../images/banner3.jpg';
 
 const Banner = () => {
     return (
@@ -16,29 +16,31 @@ const Banner = () => {
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={bg1} class="d-block bg-w" alt="..." />
+                        <img src={banner1} class="d-block bg-w" alt="..." />
                         <div class="carousel-caption d-md-block">
-                            <p className="banner-semi-title">Health Care </p>
-                            <h3 className="banner-title">Get Trustable and Friendly Treatment </h3>
-                            <p className="text-dark mt-3"> Our Providence Hospital is a modern center <br />which provides service here.</p>
+                            <h1 className="mb-3" style={{ textTransform: 'uppercase', fontWeight: '700', fontSize: '40px' }}>Get the best <span style={{ color: 'darkblue' }}>Treatment</span> <br /> from our hospital</h1>
+                            <p>Our doctors and nurses will take care <br />of you according to your problems.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src={banner2} class="d-block bg-w" alt="..." />
+                        <div class="carousel-caption d-md-block">
+                            <h1 className="mb-3" style={{ textTransform: 'uppercase', fontWeight: '700', fontSize: '40px' }}>Get <span style={{ color: 'darkblue' }}>Trustable</span> and <br /> Friendly Treatment</h1>
+                            <p>Our Providence Hospital is a modern center <br />which provides service here.</p>
+
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src={bg2} class="d-block bg-w" alt="..." />
+                        <img src={banner3} class="d-block bg-w" alt="..." />
                         <div class="carousel-caption d-md-block">
-                            <p className="banner-semi-title">Services </p>
-                            <h3 className="banner-title">Get the best treatment from our hospital</h3>
-                            <p className="text-dark mt-3">Our doctors and nurses will take care <br />of you according to your problems.</p>
+                            <h1 className="mb-3" style={{ textTransform: 'uppercase', fontWeight: '700', fontSize: '40px' }}>Dr. <span style={{ color: 'darkblue' }}>Sukumar</span> Hasan</h1>
+                            <p>MBBS, DMU and Children Specialist</p>
+
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src={bg3} class="d-block bg-w" alt="..." />
-                        <div class="carousel-caption d-md-block">
-                            <p className="banner-semi-title text-bolder">Providence Hospital</p>
-                            <h3 className="banner-title">Dr. Sukumar Hasan</h3>
-                            <p className="text-dark mt-3">MBBS, DMU and Children Specialist</p>
-                        </div>
-                    </div>
+
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,35 +1,22 @@
-.footer{
-    margin-top: 60px;
-    background-image: url(../../images//motion.jpg);
-    height: 60vh;
+.footer {
+    background-image: url(../../images/footer.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.feature{
-    width:100%;
-    height:60vh;
-    background-color:#0843aa;
-    opacity: 0.9;
-    color:white;
-}
-.last{
-    width: 200px;
-    height: 200px;
+
+.feature {
+    background-color: rgba(0, 0, 139, 0.501);
+    padding: 90px 0px 10px 0px;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .footer{
+    .footer {
         height: 100%;
     }
-    .feature{
-        height: 100%;
-    }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .last{
-        width: 150px;
-        height: 200px;
+    .feature {
+        height: 100%;
     }
 }

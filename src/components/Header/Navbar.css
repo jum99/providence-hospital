@@ -1,25 +1,37 @@
-.nav-link{
+.nav-link {
     margin-right: 10px !important;
     color: #ffffff !important;
     font-size: 18px !important;
 
 }
-.log{
-    background-color: #151797 !important;
+
+.navbar-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.regular-button {
+    background-color: white !important;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: darkblue;
+    font-weight: 600;
+}
+
+.log {
     border-radius: 10px;
-    color: white;
 }
-.navbar-brand{
-    color: #0046c0 !important;
-    font-weight: 700;
-}
-.bg-color{
-    background-color: #4526cf;
+
+.bg-color {
+    background-color: darkblue;
+    padding: 15px;
 }
 
 .navbar-toggler {
     margin: 0 auto;
+    background-color: #ffffff;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     display: none;
 }

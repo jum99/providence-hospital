@@ -15,7 +15,7 @@ const Service = () => {
         <>
             <div className="service-form py-5">
                 <div className="mx-md-5">
-                    <h1 className="about-item mb-5 text-center text-white">Our Services</h1>
+                    <h1 className="title mb-5 text-center">Our Services</h1>
                     <div className="row">
 
                         {

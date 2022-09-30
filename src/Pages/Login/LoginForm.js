@@ -1,4 +1,3 @@
-
 import React, { useContext, useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../App';
@@ -14,6 +13,7 @@ import {
 import googleLogo from './logos/google.png';
 
 const LogInForm = () => {
+
     const { loggedInUser, setLoggedInUser, user, setUser } = useContext(UserContext);
     const [newUser, setNewUser] = useState(false);
     const history = useHistory();
@@ -105,7 +105,7 @@ const LogInForm = () => {
                             ? 'Reset Password'
                             : newUser
                                 ? 'Create an account'
-                                : 'LogIn'}
+                                : 'Log in'}
                     </h4>
                     {newUser && (
                         <>
@@ -182,7 +182,7 @@ const LogInForm = () => {
                             <input
                                 type="submit"
                                 className="login-btn form-control submit-btn"
-                                value={!newUser ? 'LogIn' : 'Create an Account'}
+                                value={!newUser ? 'Log in' : 'Create an Account'}
                             />
                         )}
                     </div>
@@ -204,7 +204,7 @@ const LogInForm = () => {
                                 : ''}
                         <span className="orange-text" onClick={() => setNewUser(!newUser)}>
                             {newUser && !(location.hash === '#/reset')
-                                ? 'LogIn'
+                                ? 'Log in'
                                 : !(location.hash === '#/reset')
                                     ? 'Create an account'
                                     : ''}

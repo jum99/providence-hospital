@@ -10,11 +10,15 @@ import Login from './Pages/Login/Login';
 import { createContext, useState } from 'react';
 import Dashboard from './Pages/Dashboard';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import AboutDetails from './Pages/AboutDetails/AboutDetails';
 import DoctorsDetails from './Pages/DoctorsDetails/DoctorsDetails';
-import BlogDetails from './Pages/BlogDetails/BlogDetails';
-import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+// import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import NotFound from './Pages/NotFound';
+import About from './components/About/About';
+import Blog from './components/Blog/Blog';
+import Service from './components/Services/Service';
+import Navbar from './components/Header/Navbar';
+// import Service from './components/Services/Service';
+// import Service from './components/Services/Service';
 
 export const UserContext = createContext();
 
@@ -36,34 +40,35 @@ function App() {
   return (
     <UserContext.Provider value={{ loggedInUser, setLoggedInUser, user, setUser }}>
       <Router>
+        <Navbar />
         <Switch>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/aboutDetails">
-            <AboutDetails />
-          </Route>
-          <Route exact path="/doctorsDetails">
-            <DoctorsDetails />
-          </Route>
-          <Route exact path="/blogDetails">
-            <BlogDetails />
-          </Route>
-          <Route exact path="/serviceDetails">
-            <ServiceDetails />
-          </Route>
-          <PrivateRoute exact path="/dashboard">
-            <Dashboard />
-          </PrivateRoute>
-          <PrivateRoute exact path="/appointment">
-            <Appointment />
-          </PrivateRoute>
           <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/doctorsDetails">
+            <DoctorsDetails />
+          </Route>
+          <Route path="/blogs">
+            <Blog />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/services">
+            <Service />
+          </Route>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/appointment">
+            <Appointment />
+          </PrivateRoute>
           <Route path="*">
             <NotFound />
           </Route>
